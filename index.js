@@ -5,7 +5,7 @@ const ms = require("ms");
 const bot = new Discord.Client();
 bot.commands = new Discord.Collection();
 const colors = require("colors");
-let dev = "463024524263161877";
+let dev = "406819407097233430";
 
 const clean = text => {
   if (typeof(text) === "string")
@@ -38,20 +38,20 @@ bot.on("ready", async () => {
 });
 
 bot.on('guildMemberAdd', member => {
-  member.guild.channels.get('465588181320859649').setName(`🌐 Total Members: ${member.guild.memberCount}`)
+  member.guild.channels.get('482866702132969472').setName(`🌐 Total Members: ${member.guild.memberCount}`)
 
-  member.guild.channels.get('465588255715229716').setName(`👥 Newest: ${member.user.username}`)
+  member.guild.channels.get('482866758311477248').setName(`👥 Newest: ${member.user.username}`)
 
-  member.guild.channels.get('465588423705493504').setName(`⭐ Goal: ${member.guild.memberCount}/300`)
+  member.guild.channels.get('482867073773731864').setName(`⭐ Goal: ${member.guild.memberCount}/300`)
 
     let canal = member.guild.channels.find('id', '465565762271051792');
     canal.send("[**+**] " + member.user.tag + "");
 });
 
 bot.on('guildMemberRemove', member => {
-  member.guild.channels.get('465588181320859649').setName(`🌐 Total Members: ${member.guild.memberCount}`)
+  member.guild.channels.get('482866702132969472').setName(`🌐 Total Members: ${member.guild.memberCount}`)
 
-  member.guild.channels.get('465588423705493504').setName(`⭐ Goal: ${member.guild.memberCount}/300`)
+  member.guild.channels.get('482867073773731864').setName(`⭐ Goal: ${member.guild.memberCount}/300`)
 
     let canal = member.guild.channels.find('id', '465565762271051792');
     canal.send("[**-**] " + member.user.tag + "");
